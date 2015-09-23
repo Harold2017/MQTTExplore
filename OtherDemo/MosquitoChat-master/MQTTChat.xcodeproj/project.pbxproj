@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E175194197AC4DD00FB2D33 /* mosquitoChatLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E17518E197AC4DD00FB2D33 /* mosquitoChatLogin.png */; };
+		5E175195197AC4DD00FB2D33 /* mosquitoChatLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E17518F197AC4DD00FB2D33 /* mosquitoChatLogin@2x.png */; };
+		5E175196197AC4DD00FB2D33 /* loginOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E175190197AC4DD00FB2D33 /* loginOff.png */; };
+		5E175197197AC4DD00FB2D33 /* loginOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E175191197AC4DD00FB2D33 /* loginOff@2x.png */; };
+		5E175198197AC4DD00FB2D33 /* loginOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E175192197AC4DD00FB2D33 /* loginOn.png */; };
+		5E175199197AC4DD00FB2D33 /* loginOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E175193197AC4DD00FB2D33 /* loginOn@2x.png */; };
+		5EF424F4197993E600B297F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF424F3197993E600B297F3 /* main.m */; };
+		5EF424F7197993E600B297F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF424F6197993E600B297F3 /* AppDelegate.m */; };
+		5EF424FD197993E600B297F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF424FB197993E600B297F3 /* Main.storyboard */; };
+		5EF424FF197993E600B297F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF424FE197993E600B297F3 /* Images.xcassets */; };
+		5EF4250B197993E700B297F3 /* MQTTChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF4250A197993E700B297F3 /* MQTTChatTests.m */; };
+		5EF425161979978800B297F3 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF425151979978800B297F3 /* ChatViewController.m */; };
+		5EF425181979ABA700B297F3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF425171979ABA700B297F3 /* Social.framework */; };
+		5EF4251B1979AC1000B297F3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF4251A1979AC1000B297F3 /* LoginViewController.m */; };
+		B9CAFDA082534504B24CEFA2 /* libPods-MQTTChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DE766579F75481BBB3FD9BA /* libPods-MQTTChat.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EF42505197993E700B297F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EF424E6197993E600B297F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EF424ED197993E600B297F3;
+			remoteInfo = MQTTChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		243E4F0BBADCD594887A0D43 /* Pods-MQTTChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTChat/Pods-MQTTChat.release.xcconfig"; sourceTree = "<group>"; };
+		5E17518E197AC4DD00FB2D33 /* mosquitoChatLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mosquitoChatLogin.png; sourceTree = "<group>"; };
+		5E17518F197AC4DD00FB2D33 /* mosquitoChatLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mosquitoChatLogin@2x.png"; sourceTree = "<group>"; };
+		5E175190197AC4DD00FB2D33 /* loginOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginOff.png; sourceTree = "<group>"; };
+		5E175191197AC4DD00FB2D33 /* loginOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginOff@2x.png"; sourceTree = "<group>"; };
+		5E175192197AC4DD00FB2D33 /* loginOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginOn.png; sourceTree = "<group>"; };
+		5E175193197AC4DD00FB2D33 /* loginOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginOn@2x.png"; sourceTree = "<group>"; };
+		5EF424EE197993E600B297F3 /* MQTTChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTTChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF424F2197993E600B297F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF424F3197993E600B297F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EF424F5197993E600B297F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5EF424F6197993E600B297F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5EF424FC197993E600B297F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EF424FE197993E600B297F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5EF42504197993E700B297F3 /* MQTTChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQTTChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF42509197993E700B297F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EF4250A197993E700B297F3 /* MQTTChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQTTChatTests.m; sourceTree = "<group>"; };
+		5EF425141979978800B297F3 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		5EF425151979978800B297F3 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		5EF425171979ABA700B297F3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		5EF425191979AC1000B297F3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5EF4251A1979AC1000B297F3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8DE766579F75481BBB3FD9BA /* libPods-MQTTChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MQTTChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E835113B8843B12939B3AA5 /* Pods-MQTTChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTChat/Pods-MQTTChat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EF424EB197993E600B297F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF425181979ABA700B297F3 /* Social.framework in Frameworks */,
+				B9CAFDA082534504B24CEFA2 /* libPods-MQTTChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF42501197993E700B297F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A4E277FE2A42A7A21FD97C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EF425171979ABA700B297F3 /* Social.framework */,
+				8DE766579F75481BBB3FD9BA /* libPods-MQTTChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E17518D197AC4B900FB2D33 /* Images (bug in xcode6) */ = {
+			isa = PBXGroup;
+			children = (
+				5E17518E197AC4DD00FB2D33 /* mosquitoChatLogin.png */,
+				5E17518F197AC4DD00FB2D33 /* mosquitoChatLogin@2x.png */,
+				5E175190197AC4DD00FB2D33 /* loginOff.png */,
+				5E175191197AC4DD00FB2D33 /* loginOff@2x.png */,
+				5E175192197AC4DD00FB2D33 /* loginOn.png */,
+				5E175193197AC4DD00FB2D33 /* loginOn@2x.png */,
+			);
+			name = "Images (bug in xcode6)";
+			sourceTree = "<group>";
+		};
+		5EF424E5197993E600B297F3 = {
+			isa = PBXGroup;
+			children = (
+				5EF424F0197993E600B297F3 /* MQTTChat */,
+				5EF42507197993E700B297F3 /* MQTTChatTests */,
+				5EF424EF197993E600B297F3 /* Products */,
+				12A4E277FE2A42A7A21FD97C /* Frameworks */,
+				DA61E3057EC10C68420B9E8A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5EF424EF197993E600B297F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EF424EE197993E600B297F3 /* MQTTChat.app */,
+				5EF42504197993E700B297F3 /* MQTTChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EF424F0197993E600B297F3 /* MQTTChat */ = {
+			isa = PBXGroup;
+			children = (
+				5EF424F5197993E600B297F3 /* AppDelegate.h */,
+				5EF424F6197993E600B297F3 /* AppDelegate.m */,
+				5EF425141979978800B297F3 /* ChatViewController.h */,
+				5EF425151979978800B297F3 /* ChatViewController.m */,
+				5EF424FB197993E600B297F3 /* Main.storyboard */,
+				5EF425191979AC1000B297F3 /* LoginViewController.h */,
+				5EF4251A1979AC1000B297F3 /* LoginViewController.m */,
+				5EF424FE197993E600B297F3 /* Images.xcassets */,
+				5EF424F1197993E600B297F3 /* Supporting Files */,
+			);
+			path = MQTTChat;
+			sourceTree = "<group>";
+		};
+		5EF424F1197993E600B297F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E17518D197AC4B900FB2D33 /* Images (bug in xcode6) */,
+				5EF424F2197993E600B297F3 /* Info.plist */,
+				5EF424F3197993E600B297F3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EF42507197993E700B297F3 /* MQTTChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EF4250A197993E700B297F3 /* MQTTChatTests.m */,
+				5EF42508197993E700B297F3 /* Supporting Files */,
+			);
+			path = MQTTChatTests;
+			sourceTree = "<group>";
+		};
+		5EF42508197993E700B297F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5EF42509197993E700B297F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA61E3057EC10C68420B9E8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E835113B8843B12939B3AA5 /* Pods-MQTTChat.debug.xcconfig */,
+				243E4F0BBADCD594887A0D43 /* Pods-MQTTChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EF424ED197993E600B297F3 /* MQTTChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF4250E197993E700B297F3 /* Build configuration list for PBXNativeTarget "MQTTChat" */;
+			buildPhases = (
+				E2C987A9BEB441A9A04E7483 /* Check Pods Manifest.lock */,
+				5EF424EA197993E600B297F3 /* Sources */,
+				5EF424EB197993E600B297F3 /* Frameworks */,
+				5EF424EC197993E600B297F3 /* Resources */,
+				D3F51F4EA9DB47209CCC03E7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQTTChat;
+			productName = MQTTChat;
+			productReference = 5EF424EE197993E600B297F3 /* MQTTChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EF42503197993E700B297F3 /* MQTTChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF42511197993E700B297F3 /* Build configuration list for PBXNativeTarget "MQTTChatTests" */;
+			buildPhases = (
+				5EF42500197993E700B297F3 /* Sources */,
+				5EF42501197993E700B297F3 /* Frameworks */,
+				5EF42502197993E700B297F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EF42506197993E700B297F3 /* PBXTargetDependency */,
+			);
+			name = MQTTChatTests;
+			productName = MQTTChatTests;
+			productReference = 5EF42504197993E700B297F3 /* MQTTChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EF424E6197993E600B297F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "CocoaHeads Brasil";
+				TargetAttributes = {
+					5EF424ED197993E600B297F3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					5EF42503197993E700B297F3 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5EF424ED197993E600B297F3;
+					};
+				};
+			};
+			buildConfigurationList = 5EF424E9197993E600B297F3 /* Build configuration list for PBXProject "MQTTChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EF424E5197993E600B297F3;
+			productRefGroup = 5EF424EF197993E600B297F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EF424ED197993E600B297F3 /* MQTTChat */,
+				5EF42503197993E700B297F3 /* MQTTChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EF424EC197993E600B297F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF424FD197993E600B297F3 /* Main.storyboard in Resources */,
+				5E175199197AC4DD00FB2D33 /* loginOn@2x.png in Resources */,
+				5E175196197AC4DD00FB2D33 /* loginOff.png in Resources */,
+				5E175197197AC4DD00FB2D33 /* loginOff@2x.png in Resources */,
+				5E175194197AC4DD00FB2D33 /* mosquitoChatLogin.png in Resources */,
+				5EF424FF197993E600B297F3 /* Images.xcassets in Resources */,
+				5E175198197AC4DD00FB2D33 /* loginOn.png in Resources */,
+				5E175195197AC4DD00FB2D33 /* mosquitoChatLogin@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF42502197993E700B297F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3F51F4EA9DB47209CCC03E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQTTChat/Pods-MQTTChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2C987A9BEB441A9A04E7483 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EF424EA197993E600B297F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF4251B1979AC1000B297F3 /* LoginViewController.m in Sources */,
+				5EF424F7197993E600B297F3 /* AppDelegate.m in Sources */,
+				5EF425161979978800B297F3 /* ChatViewController.m in Sources */,
+				5EF424F4197993E600B297F3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EF42500197993E700B297F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF4250B197993E700B297F3 /* MQTTChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EF42506197993E700B297F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EF424ED197993E600B297F3 /* MQTTChat */;
+			targetProxy = 5EF42505197993E700B297F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EF424FB197993E600B297F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EF424FC197993E600B297F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EF4250C197993E700B297F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EF4250D197993E700B297F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EF4250F197993E700B297F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E835113B8843B12939B3AA5 /* Pods-MQTTChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MQTTChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5EF42510197993E700B297F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243E4F0BBADCD594887A0D43 /* Pods-MQTTChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MQTTChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5EF42512197993E700B297F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MQTTChat.app/MQTTChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MQTTChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		5EF42513197993E700B297F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MQTTChat.app/MQTTChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MQTTChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EF424E9197993E600B297F3 /* Build configuration list for PBXProject "MQTTChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EF4250C197993E700B297F3 /* Debug */,
+				5EF4250D197993E700B297F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF4250E197993E700B297F3 /* Build configuration list for PBXNativeTarget "MQTTChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EF4250F197993E700B297F3 /* Debug */,
+				5EF42510197993E700B297F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF42511197993E700B297F3 /* Build configuration list for PBXNativeTarget "MQTTChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EF42512197993E700B297F3 /* Debug */,
+				5EF42513197993E700B297F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EF424E6197993E600B297F3 /* Project object */;
+}

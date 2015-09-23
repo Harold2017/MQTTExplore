@@ -1,0 +1,12 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, "6.0"
+
+target "MQTTChat" do
+pod 'JSQMessagesViewController', :git => 'https://github.com/jessesquires/JSQMessagesViewController', :branch => 'version_5.3.2_patch'
+pod 'MQTTKit', :git => 'https://github.com/mobile-web-messaging/MQTTKit.git'
+end
+
+target "MQTTChatTests" do
+
+end
+

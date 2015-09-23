@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047C494CA82CA97DA97FC5DCB528D723 /* read_handle.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B8B54BE627707302B9BD053DC84D64 /* read_handle.h */; };
+		1AB5DD98DDC4E5A21451A9BDB85391BE /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D7B7B6A6A0704CD626C36B23C1F8BB5 /* net_mosq.c */; };
+		1C1E52868790E9D563E2E9FCDCF8362D /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E7AE63785ADE29B55186A60E81820B38 /* send_mosq.c */; };
+		283D77D4A01726A4EEC67FBABD0302EF /* will_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 6461593DB47E9FF8FA65F6AE21C01AAA /* will_mosq.h */; };
+		3429DB3662C571D208D73FE93EA10004 /* mosquitto.h in Headers */ = {isa = PBXBuildFile; fileRef = 096F8695D01FB296EBA2B7823F1E5513 /* mosquitto.h */; };
+		44FAB1D1D493BC6FFFEE4CB10406A6DD /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C09FED992EF402E88E3441EB6A4D9 /* util_mosq.c */; };
+		475D56B66F658D102116BD70448F00ED /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EA2F70E61788703801C21C0731D03A /* Pods-dummy.m */; };
+		4C8426AC0563FDA8124E641261C1D1C8 /* MQTTKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 08F15629CFA8FDB3E64C1CE0C835CC75 /* MQTTKit.h */; };
+		5420E7414DAE6C2206C4B8B97FA22DE9 /* MQTTKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3D3A1670066DF61F9459DD87F4A961 /* MQTTKit.m */; };
+		5F51140E674D920323C5C4E5265CD277 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D56781845AA6E0B41AFE67E227FA2B /* Foundation.framework */; };
+		63DA64950FCF7375EB56F2C8F707A907 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D56781845AA6E0B41AFE67E227FA2B /* Foundation.framework */; };
+		68074D4192831DEA78686ACFD2055219 /* time_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = FAA2C4BDB889A5F5272DECE0ACDD541A /* time_mosq.c */; };
+		6B7AD24D6870409D263411B4205CA6BE /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 157748F389719AD5F6A6C9D9CEBB170C /* logging_mosq.c */; };
+		6BB35E1244C7355C4F15CCC12CC69A62 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = ABC53B862803E7358C074510DC45D125 /* memory_mosq.c */; };
+		7070C001B37E82BFFCE8EF60789EEB7C /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 61AEC65FD61A441D1C0917882A30B090 /* mosquitto.c */; };
+		70D2E4150DC0C43917D7F7028D0E4C6D /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 69B38003E56F22F8612ED4A05D636D64 /* messages_mosq.c */; };
+		71E01E5076AF213036045E042E0DC83E /* tls_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = AD7C505E8B0861A459FBA7A60E27463B /* tls_mosq.h */; };
+		72DDF3DE8431C635E847C3DEC6EF66A0 /* MQTTKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 328135FC4327DB2313BCB2E3B8E19BAF /* MQTTKit-dummy.m */; };
+		75207D8731385444B89DBE72CE652D70 /* mqtt3_protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9066A8FD3A40DE17BF494AC331FDDC9B /* mqtt3_protocol.h */; };
+		85ED5961FD6EBAA1335D4F0FBA5E7549 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F7972E62DDD18F5FA4B2F93A34A123B /* send_client_mosq.c */; };
+		88079D1CD22D0AE58992A2B8B3C6BBB8 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = AB26174FF336B4C57681543333D96481 /* thread_mosq.c */; };
+		904F41806CD7F2F2670DB9174BC571CC /* tls_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FBECA733DA16DA51619EA0C992ACF58 /* tls_mosq.c */; };
+		924C9E5E7A403D1E5DA4EA653D8D9B0D /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = ABE484E2309728CFDAE3F96E3A2A44FA /* read_handle_client.c */; };
+		953C9E3FE6C090E8BD09A2A518DA1340 /* send_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B53AC2248CE4DC22DC678704AE2D948 /* send_mosq.h */; };
+		9CBAA6D141BAEF791A7EC9CC5CA40D4B /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2A69E79E7B4EA618EE7ED1C9703EAE /* config.h */; };
+		B680CA9797F6BD86CD03CCE42CBB0AAA /* util_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = C97019D6DE48F06D2B488B8EC2B13495 /* util_mosq.h */; };
+		BE909B2E559966AF3B8578754BA09EF4 /* net_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C88676025925A3431B1568256FD2EFC /* net_mosq.h */; };
+		C085C0DCC8A3FDFC6D65ACA320587032 /* memory_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 523319FF8FD9D5A278E2CA44A7BFB444 /* memory_mosq.h */; };
+		C518CD23343BE3CBB428AF15A2B36746 /* messages_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = BB36E1B42940AD7ECFD83B36A7DB53D1 /* messages_mosq.h */; };
+		D40B858A3493372184740E09A90C82B2 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = E572F606ECFB7450F4C79AFA0C0C1D8C /* read_handle.c */; };
+		D5D532023D65C9E3CDD4F0D6B354C3A3 /* mosquitto_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C673EABC6AECCBFED811D7E742C797 /* mosquitto_internal.h */; };
+		D9B9624A0E1E3203305D532C3DF22732 /* logging_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D263480BC8A3286FC79FC8204FE51B /* logging_mosq.h */; };
+		DCBBF6E2703C08D30ED04012F43B4DAA /* time_mosq.h in Headers */ = {isa = PBXBuildFile; fileRef = 855FF22F8B0C527F4B6C2F0D57C65188 /* time_mosq.h */; };
+		F2EBD5610836C908FB22B3F7C358BD74 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 04E013308D5A7B6801A08ED6FAA51650 /* read_handle_shared.c */; };
+		F671D20700718B10E132A82343006084 /* dummypthread.h in Headers */ = {isa = PBXBuildFile; fileRef = 3677A1E82437DD95A199769B49E7F096 /* dummypthread.h */; };
+		F9DFB1057F66C70B941E2C4DB6F802C2 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = E17469311F706F98ECFEBEE29365835B /* will_mosq.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67F6F5CC25AD05C76D277CC95DD1D907 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48C57BE98C2709409BC64880DCBA5267;
+			remoteInfo = MQTTKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02EA2F70E61788703801C21C0731D03A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		04E013308D5A7B6801A08ED6FAA51650 /* read_handle_shared.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_shared.c; path = libmosquitto/read_handle_shared.c; sourceTree = "<group>"; };
+		08F15629CFA8FDB3E64C1CE0C835CC75 /* MQTTKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MQTTKit.h; path = MQTTKit/MQTTKit.h; sourceTree = "<group>"; };
+		096F8695D01FB296EBA2B7823F1E5513 /* mosquitto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto.h; path = libmosquitto/mosquitto.h; sourceTree = "<group>"; };
+		0E3D3A1670066DF61F9459DD87F4A961 /* MQTTKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MQTTKit.m; path = MQTTKit/MQTTKit.m; sourceTree = "<group>"; };
+		157748F389719AD5F6A6C9D9CEBB170C /* logging_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = logging_mosq.c; path = libmosquitto/logging_mosq.c; sourceTree = "<group>"; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17C673EABC6AECCBFED811D7E742C797 /* mosquitto_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mosquitto_internal.h; path = libmosquitto/mosquitto_internal.h; sourceTree = "<group>"; };
+		1B53AC2248CE4DC22DC678704AE2D948 /* send_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = send_mosq.h; path = libmosquitto/send_mosq.h; sourceTree = "<group>"; };
+		1C88676025925A3431B1568256FD2EFC /* net_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net_mosq.h; path = libmosquitto/net_mosq.h; sourceTree = "<group>"; };
+		2DB8287336DB33040E2066F26D5A93A0 /* libMQTTKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMQTTKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		320DB52550157003EBDAB71468996E22 /* MQTTKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MQTTKit.xcconfig; sourceTree = "<group>"; };
+		328135FC4327DB2313BCB2E3B8E19BAF /* MQTTKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MQTTKit-dummy.m"; sourceTree = "<group>"; };
+		3677A1E82437DD95A199769B49E7F096 /* dummypthread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummypthread.h; path = libmosquitto/dummypthread.h; sourceTree = "<group>"; };
+		3C2C09FED992EF402E88E3441EB6A4D9 /* util_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = util_mosq.c; path = libmosquitto/util_mosq.c; sourceTree = "<group>"; };
+		4E2A69E79E7B4EA618EE7ED1C9703EAE /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = libmosquitto/config.h; sourceTree = "<group>"; };
+		4FBECA733DA16DA51619EA0C992ACF58 /* tls_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = tls_mosq.c; path = libmosquitto/tls_mosq.c; sourceTree = "<group>"; };
+		523319FF8FD9D5A278E2CA44A7BFB444 /* memory_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory_mosq.h; path = libmosquitto/memory_mosq.h; sourceTree = "<group>"; };
+		53D56781845AA6E0B41AFE67E227FA2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5746F69409DA24EF0FF8164D6385880D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		5F7972E62DDD18F5FA4B2F93A34A123B /* send_client_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_client_mosq.c; path = libmosquitto/send_client_mosq.c; sourceTree = "<group>"; };
+		61AEC65FD61A441D1C0917882A30B090 /* mosquitto.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mosquitto.c; path = libmosquitto/mosquitto.c; sourceTree = "<group>"; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		6461593DB47E9FF8FA65F6AE21C01AAA /* will_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = will_mosq.h; path = libmosquitto/will_mosq.h; sourceTree = "<group>"; };
+		6815A58F01E2AD5E3C9EEF7D2C8BBC69 /* MQTTKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MQTTKit-prefix.pch"; sourceTree = "<group>"; };
+		69B38003E56F22F8612ED4A05D636D64 /* messages_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = messages_mosq.c; path = libmosquitto/messages_mosq.c; sourceTree = "<group>"; };
+		6D7B7B6A6A0704CD626C36B23C1F8BB5 /* net_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = net_mosq.c; path = libmosquitto/net_mosq.c; sourceTree = "<group>"; };
+		73D263480BC8A3286FC79FC8204FE51B /* logging_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging_mosq.h; path = libmosquitto/logging_mosq.h; sourceTree = "<group>"; };
+		795018518324D8757009680FCE0111AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1B43D81848BCADDBC97791D17C0B1F /* MQTTKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MQTTKit-Private.xcconfig"; sourceTree = "<group>"; };
+		855FF22F8B0C527F4B6C2F0D57C65188 /* time_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = time_mosq.h; path = libmosquitto/time_mosq.h; sourceTree = "<group>"; };
+		88B8B54BE627707302B9BD053DC84D64 /* read_handle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = read_handle.h; path = libmosquitto/read_handle.h; sourceTree = "<group>"; };
+		9066A8FD3A40DE17BF494AC331FDDC9B /* mqtt3_protocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mqtt3_protocol.h; path = libmosquitto/mqtt3_protocol.h; sourceTree = "<group>"; };
+		A38F31143DC326711D97B85F2A6E176A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		AB26174FF336B4C57681543333D96481 /* thread_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = thread_mosq.c; path = libmosquitto/thread_mosq.c; sourceTree = "<group>"; };
+		ABC53B862803E7358C074510DC45D125 /* memory_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = memory_mosq.c; path = libmosquitto/memory_mosq.c; sourceTree = "<group>"; };
+		ABE484E2309728CFDAE3F96E3A2A44FA /* read_handle_client.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle_client.c; path = libmosquitto/read_handle_client.c; sourceTree = "<group>"; };
+		AD7C505E8B0861A459FBA7A60E27463B /* tls_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls_mosq.h; path = libmosquitto/tls_mosq.h; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB36E1B42940AD7ECFD83B36A7DB53D1 /* messages_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = messages_mosq.h; path = libmosquitto/messages_mosq.h; sourceTree = "<group>"; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C97019D6DE48F06D2B488B8EC2B13495 /* util_mosq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = util_mosq.h; path = libmosquitto/util_mosq.h; sourceTree = "<group>"; };
+		E17469311F706F98ECFEBEE29365835B /* will_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = will_mosq.c; path = libmosquitto/will_mosq.c; sourceTree = "<group>"; };
+		E572F606ECFB7450F4C79AFA0C0C1D8C /* read_handle.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = read_handle.c; path = libmosquitto/read_handle.c; sourceTree = "<group>"; };
+		E7AE63785ADE29B55186A60E81820B38 /* send_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = send_mosq.c; path = libmosquitto/send_mosq.c; sourceTree = "<group>"; };
+		FAA2C4BDB889A5F5272DECE0ACDD541A /* time_mosq.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = time_mosq.c; path = libmosquitto/time_mosq.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54BD12FDE32ADFD8DC4132A98A041D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DA64950FCF7375EB56F2C8F707A907 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E851C55A561C73081EE286060A69722F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F51140E674D920323C5C4E5265CD277 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2682A51A0D6636B94AC2E91AD80F843A /* MQTTKit */ = {
+			isa = PBXGroup;
+			children = (
+				08F15629CFA8FDB3E64C1CE0C835CC75 /* MQTTKit.h */,
+				0E3D3A1670066DF61F9459DD87F4A961 /* MQTTKit.m */,
+				4E2A69E79E7B4EA618EE7ED1C9703EAE /* config.h */,
+				3677A1E82437DD95A199769B49E7F096 /* dummypthread.h */,
+				157748F389719AD5F6A6C9D9CEBB170C /* logging_mosq.c */,
+				73D263480BC8A3286FC79FC8204FE51B /* logging_mosq.h */,
+				ABC53B862803E7358C074510DC45D125 /* memory_mosq.c */,
+				523319FF8FD9D5A278E2CA44A7BFB444 /* memory_mosq.h */,
+				69B38003E56F22F8612ED4A05D636D64 /* messages_mosq.c */,
+				BB36E1B42940AD7ECFD83B36A7DB53D1 /* messages_mosq.h */,
+				61AEC65FD61A441D1C0917882A30B090 /* mosquitto.c */,
+				096F8695D01FB296EBA2B7823F1E5513 /* mosquitto.h */,
+				17C673EABC6AECCBFED811D7E742C797 /* mosquitto_internal.h */,
+				9066A8FD3A40DE17BF494AC331FDDC9B /* mqtt3_protocol.h */,
+				6D7B7B6A6A0704CD626C36B23C1F8BB5 /* net_mosq.c */,
+				1C88676025925A3431B1568256FD2EFC /* net_mosq.h */,
+				E572F606ECFB7450F4C79AFA0C0C1D8C /* read_handle.c */,
+				88B8B54BE627707302B9BD053DC84D64 /* read_handle.h */,
+				ABE484E2309728CFDAE3F96E3A2A44FA /* read_handle_client.c */,
+				04E013308D5A7B6801A08ED6FAA51650 /* read_handle_shared.c */,
+				5F7972E62DDD18F5FA4B2F93A34A123B /* send_client_mosq.c */,
+				E7AE63785ADE29B55186A60E81820B38 /* send_mosq.c */,
+				1B53AC2248CE4DC22DC678704AE2D948 /* send_mosq.h */,
+				AB26174FF336B4C57681543333D96481 /* thread_mosq.c */,
+				FAA2C4BDB889A5F5272DECE0ACDD541A /* time_mosq.c */,
+				855FF22F8B0C527F4B6C2F0D57C65188 /* time_mosq.h */,
+				4FBECA733DA16DA51619EA0C992ACF58 /* tls_mosq.c */,
+				AD7C505E8B0861A459FBA7A60E27463B /* tls_mosq.h */,
+				3C2C09FED992EF402E88E3441EB6A4D9 /* util_mosq.c */,
+				C97019D6DE48F06D2B488B8EC2B13495 /* util_mosq.h */,
+				E17469311F706F98ECFEBEE29365835B /* will_mosq.c */,
+				6461593DB47E9FF8FA65F6AE21C01AAA /* will_mosq.h */,
+				9A2749831C9E9B8CF154CFCD0ACA5202 /* Support Files */,
+			);
+			path = MQTTKit;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				53D56781845AA6E0B41AFE67E227FA2B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A428ED4DC28D439E60C8F15854C81513 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				02EA2F70E61788703801C21C0731D03A /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				A38F31143DC326711D97B85F2A6E176A /* Pods.debug.xcconfig */,
+				5746F69409DA24EF0FF8164D6385880D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		9A2749831C9E9B8CF154CFCD0ACA5202 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				320DB52550157003EBDAB71468996E22 /* MQTTKit.xcconfig */,
+				7B1B43D81848BCADDBC97791D17C0B1F /* MQTTKit-Private.xcconfig */,
+				328135FC4327DB2313BCB2E3B8E19BAF /* MQTTKit-dummy.m */,
+				6815A58F01E2AD5E3C9EEF7D2C8BBC69 /* MQTTKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MQTTKit";
+			sourceTree = "<group>";
+		};
+		A428ED4DC28D439E60C8F15854C81513 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2682A51A0D6636B94AC2E91AD80F843A /* MQTTKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8287336DB33040E2066F26D5A93A0 /* libMQTTKit.a */,
+				795018518324D8757009680FCE0111AD /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		479AC9D38CD7B19560F42818DE7173B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8426AC0563FDA8124E641261C1D1C8 /* MQTTKit.h in Headers */,
+				9CBAA6D141BAEF791A7EC9CC5CA40D4B /* config.h in Headers */,
+				F671D20700718B10E132A82343006084 /* dummypthread.h in Headers */,
+				D9B9624A0E1E3203305D532C3DF22732 /* logging_mosq.h in Headers */,
+				C085C0DCC8A3FDFC6D65ACA320587032 /* memory_mosq.h in Headers */,
+				C518CD23343BE3CBB428AF15A2B36746 /* messages_mosq.h in Headers */,
+				3429DB3662C571D208D73FE93EA10004 /* mosquitto.h in Headers */,
+				D5D532023D65C9E3CDD4F0D6B354C3A3 /* mosquitto_internal.h in Headers */,
+				75207D8731385444B89DBE72CE652D70 /* mqtt3_protocol.h in Headers */,
+				BE909B2E559966AF3B8578754BA09EF4 /* net_mosq.h in Headers */,
+				047C494CA82CA97DA97FC5DCB528D723 /* read_handle.h in Headers */,
+				953C9E3FE6C090E8BD09A2A518DA1340 /* send_mosq.h in Headers */,
+				DCBBF6E2703C08D30ED04012F43B4DAA /* time_mosq.h in Headers */,
+				71E01E5076AF213036045E042E0DC83E /* tls_mosq.h in Headers */,
+				B680CA9797F6BD86CD03CCE42CBB0AAA /* util_mosq.h in Headers */,
+				283D77D4A01726A4EEC67FBABD0302EF /* will_mosq.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		48C57BE98C2709409BC64880DCBA5267 /* MQTTKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187D4BEA53D155EF2F1475FC8B3B36E8 /* Build configuration list for PBXNativeTarget "MQTTKit" */;
+			buildPhases = (
+				5A477E507BB540E02D2A03639835B129 /* Sources */,
+				E851C55A561C73081EE286060A69722F /* Frameworks */,
+				479AC9D38CD7B19560F42818DE7173B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQTTKit;
+			productName = MQTTKit;
+			productReference = 2DB8287336DB33040E2066F26D5A93A0 /* libMQTTKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F60D7355BE0C4A1CEC0CC5F02A453FA2 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD1CCEBA771F4E2015A09BE87142D7B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				FF143A25ED624375CE41C6761E6AB4FD /* Sources */,
+				54BD12FDE32ADFD8DC4132A98A041D5A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FCD3FA94FF1E917E685EA44B3851C5A /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 795018518324D8757009680FCE0111AD /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48C57BE98C2709409BC64880DCBA5267 /* MQTTKit */,
+				F60D7355BE0C4A1CEC0CC5F02A453FA2 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A477E507BB540E02D2A03639835B129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72DDF3DE8431C635E847C3DEC6EF66A0 /* MQTTKit-dummy.m in Sources */,
+				5420E7414DAE6C2206C4B8B97FA22DE9 /* MQTTKit.m in Sources */,
+				6B7AD24D6870409D263411B4205CA6BE /* logging_mosq.c in Sources */,
+				6BB35E1244C7355C4F15CCC12CC69A62 /* memory_mosq.c in Sources */,
+				70D2E4150DC0C43917D7F7028D0E4C6D /* messages_mosq.c in Sources */,
+				7070C001B37E82BFFCE8EF60789EEB7C /* mosquitto.c in Sources */,
+				1AB5DD98DDC4E5A21451A9BDB85391BE /* net_mosq.c in Sources */,
+				D40B858A3493372184740E09A90C82B2 /* read_handle.c in Sources */,
+				924C9E5E7A403D1E5DA4EA653D8D9B0D /* read_handle_client.c in Sources */,
+				F2EBD5610836C908FB22B3F7C358BD74 /* read_handle_shared.c in Sources */,
+				85ED5961FD6EBAA1335D4F0FBA5E7549 /* send_client_mosq.c in Sources */,
+				1C1E52868790E9D563E2E9FCDCF8362D /* send_mosq.c in Sources */,
+				88079D1CD22D0AE58992A2B8B3C6BBB8 /* thread_mosq.c in Sources */,
+				68074D4192831DEA78686ACFD2055219 /* time_mosq.c in Sources */,
+				904F41806CD7F2F2670DB9174BC571CC /* tls_mosq.c in Sources */,
+				44FAB1D1D493BC6FFFEE4CB10406A6DD /* util_mosq.c in Sources */,
+				F9DFB1057F66C70B941E2C4DB6F802C2 /* will_mosq.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF143A25ED624375CE41C6761E6AB4FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475D56B66F658D102116BD70448F00ED /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FCD3FA94FF1E917E685EA44B3851C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MQTTKit;
+			target = 48C57BE98C2709409BC64880DCBA5267 /* MQTTKit */;
+			targetProxy = 67F6F5CC25AD05C76D277CC95DD1D907 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		052A17875CB827423D627183396CEB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3552BFF7170C47F27F50EFCA9B43EB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A38F31143DC326711D97B85F2A6E176A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6A4FC7FC456F96B6820AF8256E5FFEF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5746F69409DA24EF0FF8164D6385880D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7A63584531D3BBEC27EE50EA07AB5AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1B43D81848BCADDBC97791D17C0B1F /* MQTTKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MQTTKit/MQTTKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A5F13F19ADAE5F04FE0141D07A5DBAC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B1B43D81848BCADDBC97791D17C0B1F /* MQTTKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MQTTKit/MQTTKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187D4BEA53D155EF2F1475FC8B3B36E8 /* Build configuration list for PBXNativeTarget "MQTTKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5F13F19ADAE5F04FE0141D07A5DBAC7 /* Debug */,
+				7A63584531D3BBEC27EE50EA07AB5AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
+				052A17875CB827423D627183396CEB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD1CCEBA771F4E2015A09BE87142D7B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3552BFF7170C47F27F50EFCA9B43EB12 /* Debug */,
+				6A4FC7FC456F96B6820AF8256E5FFEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
